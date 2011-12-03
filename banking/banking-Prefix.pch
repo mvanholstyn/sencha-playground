@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'banking' target in the 'banking' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
