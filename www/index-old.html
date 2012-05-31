@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">
+
+
+  <link rel="stylesheet" href="jquery.mobile-1.0.css" type="text/css" />
+	<!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+	-->
+	<!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery-1.7.1.js"></script>
+  <script type="text/javascript">
+    $(document).bind("mobileinit", function() {
+      $.mobile.page.prototype.options.addBackBtn = true;
+    });
+  </script>
+  <script type="text/javascript" charset="utf-8" src="jquery.mobile-1.0.js"></script>
+  <script type="text/javascript">
+
+
+	// If you want to prevent dragging, uncomment this section
+	function preventBehavior(e)  { 
+      e.preventDefault(); 
+  };
+	//document.addEventListener("touchmove", preventBehavior, false);
+	
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	/*
+	function handleOpenURL(url)
+	{
+		// TODO: do something with the url passed in.
+	}
+	*/
+	
+	function onBodyLoad() {
+		document.addEventListener("deviceready", onDeviceReady, false);
+	}
+	
+	/* When this function is called, PhoneGap has been initialized and is ready to roll */
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	function onDeviceReady() {
+		// do your thing!
+		// navigator.notification.alert("PhoneGap is working")
+	}
+    
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+    <div data-role="page">
+      
+      <div data-role="header">
+        <h1>My Title</h1>
+      </div><!-- /header -->
+      
+      <div data-role="content">	
+        <ul data-role="listview" data-inset="true" data-filter="true">
+          <li><a href="#bar">Acura</a></li>
+          <li><a href="#">Audi</a></li>
+          <li><a href="#">BMW</a></li>
+          <li><a href="#">Cadillac</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Ferrari</a></li>
+          <li><a href="#">Ferrari</a></li>
+        </ul>
+      </div><!-- /content -->
+      
+    </div><!-- /page -->
+
+  
+    <!-- Start of second page -->
+    <div data-role="page" id="bar">
+      
+      <div data-role="header">
+        <h1>Bar</h1>
+      </div><!-- /header -->
+      
+      <div data-role="content">	
+        <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my ID is beeing clicked.</p>		
+        <p><a href="#foo">Back to foo</a></p>	
+      </div><!-- /content -->
+      
+      <div data-role="footer">
+        <h4>Page Footer</h4>
+      </div><!-- /footer -->
+    </div><!-- /page -->
+  </body>
+</html>

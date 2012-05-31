@@ -33,6 +33,7 @@
 		32ADB4B91489D0F100AA3229 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32ADB4B81489D0F100AA3229 /* Capture.bundle */; };
 		32ADB4BB1489D0F100AA3229 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32ADB4BA1489D0F100AA3229 /* PhoneGap.plist */; };
 		32ADB4BF1489D0F100AA3229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32ADB4BE1489D0F100AA3229 /* AppDelegate.m */; };
+		32ADB4C81489D1A600AA3229 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 32ADB4C71489D1A600AA3229 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +51,10 @@
 		32ADB4921489D0F100AA3229 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		32ADB4941489D0F100AA3229 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		32ADB4961489D0F100AA3229 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		32ADB49A1489D0F100AA3229 /* banking-Info.plist */ = {isa = PBXFileReference; path = "banking-Info.plist"; sourceTree = "<group>"; };
+		32ADB49A1489D0F100AA3229 /* banking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "banking-Info.plist"; sourceTree = "<group>"; };
 		32ADB49C1489D0F100AA3229 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32ADB49E1489D0F100AA3229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32ADB4A01489D0F100AA3229 /* banking-Prefix.pch */ = {isa = PBXFileReference; path = "banking-Prefix.pch"; sourceTree = "<group>"; };
+		32ADB4A01489D0F100AA3229 /* banking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "banking-Prefix.pch"; sourceTree = "<group>"; };
 		32ADB4A11489D0F100AA3229 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
 		32ADB4A61489D0F100AA3229 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		32ADB4AA1489D0F100AA3229 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -64,9 +65,10 @@
 		32ADB4B61489D0F100AA3229 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
 		32ADB4B81489D0F100AA3229 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		32ADB4BA1489D0F100AA3229 /* PhoneGap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
-		32ADB4BD1489D0F100AA3229 /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		32ADB4BD1489D0F100AA3229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		32ADB4BE1489D0F100AA3229 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		32ADB4C11489D0F100AA3229 /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		32ADB4C11489D0F100AA3229 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		32ADB4C71489D1A600AA3229 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		32ADB46C1489D0F100AA3229 = {
 			isa = PBXGroup;
 			children = (
+				32ADB4C71489D1A600AA3229 /* www */,
 				32ADB4981489D0F100AA3229 /* banking */,
 				32ADB47D1489D0F100AA3229 /* Frameworks */,
 				32ADB47B1489D0F100AA3229 /* Products */,
@@ -291,6 +294,7 @@
 				32ADB4B71489D0F100AA3229 /* Default@2x.png in Resources */,
 				32ADB4B91489D0F100AA3229 /* Capture.bundle in Resources */,
 				32ADB4BB1489D0F100AA3229 /* PhoneGap.plist in Resources */,
+				32ADB4C81489D1A600AA3229 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +417,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "banking/banking-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "banking/banking-Info.plist";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -440,6 +445,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "banking/banking-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "banking/banking-Info.plist";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -477,6 +483,7 @@
 				32ADB4C61489D0F100AA3229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
